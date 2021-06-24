@@ -1,0 +1,444 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div{
+    border:2px solid green;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Nunito', sans-serif;
+    font-size:20px;
+    font-weight:300;
+    text-rendering: optimizeLegibility;
+}   
+
+.row{
+    max-width:1300px;
+    margin : 0 auto;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0,0, 0.7),rgba(0, 0,0, 0.7)),url(img/hero.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text-box{
+    position:absolute;
+    width: 1140px;
+    top:55%;
+    left:45%;
+    transform: translate(-50%,-50%);
+}
+
+.clearfix{
+    zoom:1;
+}
+
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+h1{
+    color: white;
+    font-size:250%;
+    font-weight:300;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 30px;
+    font-weight: 300;
+}
+
+.btn-full{
+    background-color:#c75a12;
+    border-radius:30px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-ghost{
+    border:1px solid #c75a12;
+    border-radius:30px;
+    color: #c75a12;
+    text-decoration: none;
+}
+
+
+.btn-ghost:hover{
+    background-color:#c75a12;
+    border-radius:30px;
+    color: white;
+    text-decoration: none;
+    transition: .4s ease-in;
+}
+
+.btn-full:hover{
+    border:1px solid #c75a12;
+    border-radius:30px;
+    color: #c75a12;
+    text-decoration: none;
+    background-color: transparent;
+    transition: .4s ease-in;
+}
+
+.logo{
+    height:150px;
+    width:auto;
+    float:left;
+}
+
+.main-nav{
+    float:right;
+    list-style:none;
+    margin-top:60px;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-left:45px;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.main-nav li :hover{
+    background-color: #c75a12;
+    color: white;
+    transition:0.3s ease-in-out;
+    padding:10px;
+}
+
+
+.col{
+    margin-top:5%;
+}
+
+.sec-features{
+    margin-top:6%;
+    text-align:center;
+}
+
+i{
+    margin-bottom:30px;
+    color: #c75a12;
+    font-size:40px;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align:center;
+}
+
+hr{
+    width:20%;
+    color :#c75a12;
+    margin : 20px 0;
+}
+
+.long-copy{
+    line-height: 145%;
+    width:70%;
+    margin-left:15%;
+}
+
+h3{
+    margin : 10px 0;
+    text-align:center;
+}
+
+.meals-showcase{ 
+    list-style: none;
+    width:100%;
+}
+
+.meals-showcase li{
+    display:block;
+    float:left;
+    width:25%;
+}
+
+.meal-photo{
+    width:100%;
+    margin:0;
+    overflow: hidden;
+    background-color:#000;
+}
+
+
+
+.meal-photo img{
+    opacity: 0.7;
+    width:100%;
+    height:auto;
+    transform:scale(1.15);
+    transition:transform 0.5s,opacity 0.5s;
+}
+
+.sec-meals{
+    margin-top:6%;
+    padding:0;
+}
+
+.meal-photo img:hover{
+    transform:scale(1.05);
+    opacity:1;
+}
+
+.sec-steps{
+    background-color:#f4f4f4;
+}
+
+.sec-steps h2{
+    margin-top: 6%;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3%;
+}
+
+
+.steps-box:last-child{
+    padding-left:3%;
+    margin-top:8%;
+}
+
+
+.app-screen{
+    width:40%;
+    height:30%;
+}
+
+.work-step{
+    margin-bottom:50px;
+}
+
+.work-step div{
+    border : 2px solid #c75a12;
+    border-radius:50%;
+    height:50px;width:50px;
+    display:inline-block;
+    padding-left: 16px;
+    padding-top: 10px;
+    color :#c75a12;
+    font-weight:500;
+    margin-bottom:25px;
+    float:left;
+    margin-right:20px;
+}
+
+.btn-app{
+    height: 50px;
+    margin-top:25px;
+}
+
+
+.sec-cities{
+    margin-top:6%;
+}
+
+.city-box img{
+    width:100%;
+    height:auto;
+}
+
+.city-box i{
+    font-size:20px;
+}
+
+.city-box h3{
+   /* text-align:center;*/
+   text-transform:uppercase;
+   margin:20px 0;
+}
+
+
+
+.sec-testimonials{
+    margin-top:6%;
+    background-image: linear-gradient(rgba(0, 0,0, 0.7),rgba(0, 0,0, 0.7)),url(./img/2.jpg);
+    background-size:cover;
+    background-position:center;
+    color: white;
+}
+
+.sec-testimonials h2{
+    margin-top:5%;
+}
+
+blockquote{
+    padding:2%;
+    font-style:italic;
+}
+
+cite{
+    font-size:90%;
+    font-weight:500;
+    margin-top:25px;
+    display:block;
+    margin-bottom:2%;
+}
+
+cite img{
+    height:50px;
+    border-radius:50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+
+.sec-sign-up{
+    background-color: #f4f4f4;
+}
+
+
+.sec-sign-up h2{
+    margin-top: 5%;
+}
+
+
+.plan-box h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-size:150%;
+}
+
+.plan-price{
+    color:#c75a12;
+    font-size:150%;
+    margin :20px 0;
+}
+
+.sec-sign-up ul{
+    list-style:none;
+}
+
+.sec-sign-up i{
+    font-size:20px;
+    margin-right:10px;
+}
+
+.sec-sign-up .btn-ghost{
+    padding:10px;
+    border-radius:5px;
+    margin-top:20px;
+}
+
+.plan-price-meal{
+    margin:20px 0;
+}
+
+
+.sec-sign-up .col{
+    background-color:white;
+    padding:35px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+
+.sec-contact{
+    margin-top:5%;
+}
+
+
+
+.contact-form{
+    width: 60%;
+    margin:0 auto;
+    margin-top: 2%;
+}
+
+
+input[type="text"],select,textarea,input[type="email"]{
+    width: 100%;
+    height:35px;
+    padding:5px;
+    border-radius: 3px;border:1px solid #c7c7c7;
+}
+
+.btn-submit{
+    border:0px;
+}
+
+.text-area{
+    height: 300px;
+}
+
+
+*:focus{
+    outline:none;
+}
+
+.footer{
+    background-color: rgb(34, 33, 33);
+    color: white;
+    margin-top:5%;
+}
+
+
+
+.footer a{
+    text-decoration: none;
+    color: rgb(122, 118, 118);
+    margin-left:10px;
+    text-transform: uppercase;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+    transition: 0.4 all ease-in-out;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+
+
+.footer-nav li{
+    display: inline-block;
+}
+
+.social-icons-footer{
+    list-style: none;
+}
+
+.social-icons-footer i{
+    font-size:20px;
+}
+
+
+.social-icons-footer li{
+    display: inline-block;
+    float:right;
+    margin-right: 20px;
+}
+
+.footer p{
+    margin:10px 0;
+    color: rgb(122, 118, 118);
+}
